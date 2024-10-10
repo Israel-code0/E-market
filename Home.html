@@ -1,0 +1,567 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Home</title>
+  </head>
+
+  <style>
+
+    input[type="text"],
+    input[type="password"] {
+      width: 98%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+   
+    button {
+      background-color:black;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity: 2;
+    }
+
+ 
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #525252;
+    }
+
+    .cancelbtn,
+    .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+.Terms{
+ color: dodgerblue
+}
+
+.Click{
+  width: auto; cursor: pointer
+}
+
+.remeber{margin-bottom: 15px}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+  }
+
+    .modal-content {
+      background-color:#001e3f;
+      margin: 5% auto 15% auto;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+  
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+   
+    @media screen and (max-width: 300px) {
+      .cancelbtn,
+      .signupbtn {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <p class="Line">4.9% DISCOUNT SHIPPING ON ALL LAGOS ORDERS ABOVE N100,000 (14 ITEMS MAX) | WORLDWIDE SHIPPING AVAILABLE</p>
+    <nav class="nav">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="in">
+          <button onclick="document.getElementById('id01').style.display='block'"
+              class="Click" 
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+    </nav>
+      
+        <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr />
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                required
+              />
+
+              <p>
+                By creating an account you agree to our
+                <a href="#" class="Terms">Terms & Privacy</a>.
+              </p>
+
+              <div class="clearfix">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <script>
+          var modal = document.getElementById("id01");
+
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        </script>
+
+    <br />
+    </nav>
+
+    <div class="he">
+    <h1>Shop Our Biggest Fall Sale</h1>
+    <h3>At Niffy.com, our mission is to provide you with the largest selection of Bedsheets and Pillowcase at the lowest prices.</h3>
+  </div>
+
+
+  <table class="table-container">
+    <tr>
+       
+        <td class="right-column">
+            <div class="sale-text">Spring Sale</div>
+            <br><br>
+            <div class="discount-text"><i><b>UPTO</b></i></div>
+            <br><br><br><br><br><br>
+            <div class="OFF"><b>55% OFF</b></div>
+            <div class="shop-button"> <b><a class="shop" href="Products.html">SHOP NOW</a></b></div>
+            <div class="product" >
+              <a href="pro1.html"><img src="Images/IMG-20241009-WA0307.jpg" alt="Floral Pattern Bedding Set"  id="produ"></a></div>
+        </td>
+        
+        <td   class="left-column" colspan="2"> 
+           <div class="pro">
+            <a href="pro2.html"><img src="Images/IMG-20241009-WA0323.jpg" alt="Floral Pattern Bedding Set"></a></div>
+        </td>
+
+        <td class="left-column"> 
+          <div class="product">
+            <a href="pro3.html"><img src="Images/WhatsApp Image 2024-10-01 at 09.44.53_52adf6d8.jpg" alt="Floral Pattern Bedding Set"></a></div>
+          <div class="product">
+            <a href="pro4.html"><img src="Images/WhatsApp Image 2024-10-01 at 09.44.52_7296cea9.jpg" alt="Floral Pattern Bedding Set"></a></div>
+      </td>  
+    </tr>
+</table>
+<br><br>
+
+
+<div class="row">
+  <div class="colum1">
+    <div class="car" >
+      <a href="exp1.html" > <img class="img" src="Images/IMG-20241009-WA0322.jpg" alt="" > <span class="ribbon">NEW</span></a>
+     
+    </div>
+  </div>
+  <div class="colum1">
+    <div class="car">
+      <a href="exp2.html" ><img class="img" src="Images/IMG-20241009-WA0321.jpg" alt=""> <span class="ribbon1">NEW</span> </a>
+      
+    </div>
+  </div>
+  <div class="colum1">
+    <div class="car">
+      <a href="exp3.html" ><img class="img" src="Images/IMG-20241009-WA0320.jpg" alt=""> <span class="ribbon2">NEW</span> </a>
+      
+    </div>
+  </div>
+  <div class="colum1">
+    <div class="car">
+      <a href="exp4.html" >  <img class="img" src="Images/IMG-20241009-WA0319.jpg" alt=""><span class="ribbon3">NEW</span> </a>
+    
+    </div>
+  </div>
+  <div class="colum1">
+    <div class="car">
+      <a href="exp5.html" > <img class="img" src="Images/IMG-20241009-WA0318.jpg" alt=""><span class="ribbon4">NEW</span> </a>
+     
+    </div>
+  </div>
+  <br><br>
+  <div class="row10">
+    <div class="colum1">
+
+      <div class="ca">
+        <a href="exp1.html" class="Exp"><span>EXPLORE MORE</span></a>
+      </div>
+    </div>
+
+    <div class="colum1">
+      <div class="ca">
+        <a href="exp2.html" class="Exp"><span>EXPLORE MORE</span></a>
+      </div>
+    </div>
+
+    <div class="colum1">
+      <div class="ca">
+        <a href="exp3.html" class="Exp"><span>EXPLORE MORE</span></a>
+      </div>
+    </div>
+
+    <div class="colum1">
+      <div class="ca">
+        <a href="exp4.html" class="Exp"><span>EXPLORE MORE</span></a>
+      </div>
+    </div>
+
+    <div class="colum1">
+      <div class="ca">
+        <a href="exp5.html" class="Exp"><span>EXPLORE MORE</span></a>
+      </div>
+    </div>
+  
+<br> <br>
+
+<div>
+  <img  src="Images/IMG-20241001-WA0036.jpg" alt=""  id="imge">
+</div>
+<br>
+<br><br>
+    <div class="row1">
+      <div class="column1">
+        <div class="card">
+          <a href="view1.html"><img src="Images/IMG-20241001-WA0025.jpg" alt="beddings"> </a>
+          
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view2.html" ><img src="Images/IMG-20241001-WA0028.jpg" alt="beddings"></a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view3.html" ><img src="Images/IMG-20241001-WA0050.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view4.html" ><img src="Images/IMG-20241001-WA0031.jpg" alt="beddings"></a>
+         
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Baccarat Rouge</p>
+          <a href="view1.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>WILD WOOD</p>
+          <a href="view2.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>31 2005 WHITE GOLD</p>
+          <a href="view3.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>ANGEL’S SHARE</p>
+          <a href="view4.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row1">
+      <div class="column1">
+        <div class="card">
+          <a href="view5.html" ><img src="Images/IMG-20241001-WA0032.jpg" alt="beddings"> </a>
+          
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view6.html" ><img src="Images/IMG-20241001-WA0033.jpg" alt="beddings"> </a>
+          
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view7.html" > <img src="Images/IMG-20241001-WA0034.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view8.html" ><img src="Images/IMG-20241001-WA0035.jpg" alt="beddings"> </a>
+          
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>OAREDA</p>
+          <a href="view5.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>J'ADORE</p>
+          <a href="view6.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>JUNGLE NATURAL</p>
+          <a href="view7.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>PORTRAITS</p>
+          <a href="view8.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+    </div>
+    
+    <br><br><br>
+    <div class="row1">
+      <div class="column1">
+        <div class="card">
+          <a href="view9.html" > <img src="Images/IMG-20241001-WA0037.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view10.html" > <img src="Images/IMG-20241001-WA0038.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view11.html" >  <img src="Images/IMG-20241001-WA0039.jpg" alt="beddings"></a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view12.html" > <img src="Images/IMG-20241001-WA0040.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Bleu de Chanel </p>
+          <a href="view9.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Fragrance</p>
+          <a href="view10.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Tom Ford</p>
+          <a href="view11.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Acqua Di Giò Absolu</p>
+          <a href="view12.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+    </div>
+    
+
+    <br><br><br>
+    <div class="row1">
+      <div class="column1">
+        <div class="card">
+          <a href="view13.html" ><img src="Images/IMG-20241001-WA0042.jpg" alt="beddings"> </a>
+        
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view14.html" ><img src="Images/IMG-20241001-WA0046.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view15.html" ><img src="Images/IMG-20241001-WA0047.jpg" alt="beddings"></a>
+     
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <a href="view16.html" ><img src="Images/IMG-20241001-WA0052.jpg" alt="beddings"> </a>
+         
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Bleu de Chanel </p>
+          <a href="view13.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Fragrance</p>
+          <a href="view14.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Tom Ford</p>
+          <a href="view15.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card1">
+          <p>Acqua Di Giò Absolu</p>
+          <a href="view16.html" class="button1"><span>View</span></a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="callout">
+      <div class="callout-header">AI Beddings</div>
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">x</span>
+      <div class="callout-container">
+        <p>our mission is to provide you with the largest selection of Bedsheets and Pillowcase at the lowest prices. <a href="Products.html">Learn more</a> or close it if it is in your way.</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+      <p class="copy">&copy; 2024 Ibijola Oluwanifemi. All rights reserved.|</p>
+     
+    
+      <ul class="horizontal-list">
+        <li class="male"><a href="mailto:Ibijolanifemi@gmail.com">Ibijolanifemi@gmail.com   |</a></li>
+        <li class="privacy-policy"><a href="Privacy_Policy.html">Privacy Policy   |</a></li>
+        <li class="terms"><a href="Terms.html">Terms of Services   |</a></li>
+        <li class="cookie-policy"><a href="Cookie_Policy.html">Cookie Policy   </a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+</body>
+</html>
